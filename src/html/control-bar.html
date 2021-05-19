@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Electron browser</title>
+    <!-- https://electronjs.org/docs/tutorial/security#csp-meta-tag -->
+    <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline';" />
+    <link rel="stylesheet" href="../css/control-bar.css">
+    <script type="text/javascript" src="../js/control-bar.js"></script>
+  </head>
+  <body>
+    <div id="tabs-container">
+      <button type="button" name="new-tab" id="new-tab-btn">+</button>
+    </div>
+
+    <div id="url-bar">
+      <button disabled type="button" name="button" id="prev-page-btn" style="background-image:url('../img/prev.png')"></button>
+      <button disabled type="button" name="button" id="next-page-btn" style="background-image:url('../img/next.png')"></button>
+      <button type="button" name="button" id="refresh-page-btn" style="background-image:url('../img/refresh.png')"></button>
+      <input type="text" name="address-bar" value="" id="address-bar" placeholder="Enter URL or search Google">
+    </div>
+
+    <div id="window-controls">
+      <button type="button" name="button" id="hide-app-btn" style="background-image:url('../img/minimize.png')"></button>
+      <button type="button" name="button" id="maximize-app-btn" style="background-image:url('../img/maximize.png')"></button>
+      <button type="button" name="button" id="close-app-btn" style="background-image:url('../img/close.png')"></button>
+    </div>
+  </body>
+</html>
